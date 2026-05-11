@@ -1,0 +1,386 @@
+
+
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 80px; }
+
+body{
+  margin: 0;
+  color: #361c0b;
+  background-color: antiquewhite;
+  padding: 50px;   /*luft runt allt innehåll */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+h1{ color: #552600; margin: 0; }
+p { color: #361c0b; }
+
+
+.topbar{  
+  position: absolute; 
+  top: 0; 
+  width: 100%;
+  background: #a5815fe5;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+.brand{ 
+    display: inline-flex; 
+    align-items: center;
+ }
+.loggaliten{ 
+    height: 50px; 
+    width: auto;
+    
+ }
+
+.titel{
+  width: 100%; 
+  max-width: 1100px;
+  text-align: center; 
+  padding: 20px;
+}
+
+
+.projektshow{
+  display: grid;
+  grid-template-columns: minmax(260px,1fr) minmax(320px,420px) minmax(260px,1fr);
+  gap: 24px;
+  align-items: start;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.maskinshow{
+  position: relative;
+  background: #fff8f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+  padding: 12px;
+}
+.maskinshow .viewport{
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+#minaprojekt {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto 12px;
+    color: #552600;
+}
+
+
+.projektBilder { 
+    position: relative; 
+    display: none; 
+}
+
+.projektBilder.active { 
+    display: block;
+}
+.maskinshow img{ 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: 12px; 
+}
+.counter{
+  position: absolute; 
+  top: 8px; 
+  left: 12px;
+  background: rgba(0,0,0,.55); 
+  color: #fff; 
+  padding: 4px 8px; 
+  border-radius: 8px; 
+  font-weight: 600;
+}
+.bildtext{
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  bottom: 8px;
+  text-align: center; 
+  color: #f2f2f2; 
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  padding: 6px 10px;
+}
+.nav{
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  background: rgba(0,0,0,.45); 
+  color: #fff; 
+  border: none;
+  width: 36px; 
+  height: 36px; 
+  border-radius: 50%;
+cursor: pointer;
+}
+.nav:hover{ 
+    background: rgba(0,0,0,.6); 
+}
+.prev{ 
+    left: 10px; 
+} 
+.next{ 
+    right: 10px; 
+}
+
+.personalsida{
+  background-color: #fff8f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  padding: 30px;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.profilbild{ 
+    position: relative; 
+    display: inline-block; 
+}
+.bildhampus{
+  width: 250px; 
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid #f7e2a0;
+  object-fit: cover; 
+  margin-bottom: 15px; 
+  display: block;
+}
+.redigera{
+  position: absolute; 
+  right: 10px; 
+  bottom: 20px;
+  background: #fff; 
+  border: 1px solid #e5dccf; 
+  border-radius: 999px;
+  width: 36px; 
+  height: 36px; 
+  font-size: 16px; 
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+.redigera:hover{ transform: translateY(-1px); }
+.position { 
+    margin-top: 0; 
+    font-weight: 600; 
+    opacity: 0.9; 
+}
+.info{
+  display: grid;
+  grid-template-columns:  1fr auto; 
+  align-items: center;
+  padding: 10px 14px; 
+  margin: 10px 0; 
+  background: #fffdf7;
+  border: 1px solid #f1e6d6; 
+  border-radius: 12px;
+}
+
+.info span{ opacity: .8; }
+
+.kompetenser{
+  background: #fff8f0; 
+  border-radius: 16px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,.12); 
+  padding: 16px;
+  margin-left: 60px;
+}
+
+#minakompetenser {
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto 12px;
+}
+
+.kompetenser1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.kompetenser1 li h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: #361c0b;
+}
+
+.kompetenser1 .bar {
+  display: block;
+  background: #eee1cf;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.kompetenser1 .fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #a5815f;
+  border-radius: 999px;
+  position: relative;
+  animation: skill-fill 1200ms ease forwards;
+}
+
+.kompetenser1 .percent {
+  position:absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+@keyframes skill-fill {
+  from { width: 0;}
+  to { width: var(--level, 0%);}
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kompetenser1 .fill {
+    animation: none;
+    width: var(--level, 0%);
+  }
+}
+
+@media (max-width: 900px) {
+
+  
+  .projektshow {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "info"
+    "skills"
+    "projects";
+    gap: 16px;
+    justify-self: center;
+
+  }
+
+  .personalsida {
+    justify-self: center;
+  }
+  
+
+  .maskinshow {
+    grid-area: projects;
+  }
+  .personalsida {
+    grid-area: info; 
+  
+  }
+  .kompetenser {
+    grid-area: skills;
+    min-height: 250px;
+    }
+
+
+
+  .personalsida .kompetenser .maskinshow {
+    width: min(100%, 250px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .kompetenser {
+    margin-left: 0 !important; 
+  }
+
+  
+  .bildhampus {
+    width: 160px;
+    height: 160px;
+    border-width: 2px;
+    margin-bottom: 12px;
+  }
+
+  .maskinshow .viewport {
+   aspect-ratio: 16 / 9;
+  }
+
+  .nav {
+    width: 32px;
+    height: 32px;
+  }
+
+
+}
+
+.projektinfo {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 24px;
+}
+
+.projektlista {
+  text-align: center;
+  width: fit-content;
+  margin: 16px auto 12px;
+  color: #552600;
+}
+
+#projektruta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+ #projektruta{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 24px 0;
+  justify-content: center;
+} 
+
+.minaprojektkort {
+  background-color: #fff8f0;           
+  border: 2px solid #C4A484;           
+  border-radius: 10px;
+  padding: 16px;
+  width: 300px;
+  max-width: 300px;
+  min-width: 220px;
+  transition: transform .3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+
+.minaprojektkort:hover { 
+  transform: scale(1.03); 
+}
+
+.minaprojektkort h2{
+  margin: 0 0 6px;
+  font-size: 1.25rem;
+  color: #552600;                       
+}
+
+.minaprojektkort h3{
+  margin: 6px 0 8px;
+  font-size: 1rem;
+  color: #6a4a33;
+}
+
+.minaprojektkort {
+  margin: 0 0 8px;
+  font-size: .95rem;
+  color: #361c0b;
+}
+
+.minaprojektkor small{
+  font-size: .85rem;
+  color: #6a4a33;
+}

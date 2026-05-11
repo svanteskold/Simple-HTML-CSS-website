@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam</title>
+    <link rel="stylesheet" href="adam.css">
+    <script src="adam.css" defer></script>
+    <script src="adam.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <a href="index.html">
+                <img src="bilder/loggaliten.png" alt="loggaliten">
+            </a>
+            <div class="titlename">
+                <h1>Adam Hugosson</h1>
+                <h3>Senior Bean Research Analyst</h3>
+            </div>
+        </div>
+    </header>
+
+    <div class="about">
+        <div class="info">
+            <img src="bilder/adam.jpg" alt="adam">
+            <div class="agecity">
+                <h3>Ålder: 24</h3>
+                <h3>Stad: Örebro</h3>
+            </div>
+        </div>
+        <div class="aboutText">
+            <h1>Adams Färdigheter</h1>
+            <p>
+                Som Senior Bean Research Analyst kombinerar han djup expertis inom kaffebönors kvalitet,
+                ursprung och rostningsprocesser med stark analytisk förmåga. Han har erfarenhet av sensorisk
+                utvärdering,
+                marknadsanalys och utveckling av hållbara inköpsstrategier, vilket bidrar till att säkerställa att
+                företagets kaffemaskiner och bönor
+                uppfyller högt ställda krav på smak, innovation och kundnöjdhet.
+            </p>
+            <ul class="skills">
+                <li>
+                    <h3>Bön Analys</h3>
+                    <span class="bar">
+                        <span class="analysis">
+                            <span class="percent">90%</span>
+                        </span>
+                    </span>
+                </li>
+
+                <li>
+                    <h3>Inköpsstretegi</h3>
+                    <span class="bar">
+                        <span class="inkop">
+                            <span class="percent">85%</span>
+                        </span>
+                    </span>
+                </li>
+
+                <li>
+                    <h3>Labratorie Erfarenhet</h3>
+                    <span class="bar">
+                        <span class="labberf">
+                            <span class="percent">95%</span>
+                        </span>
+                    </span>
+                </li>
+
+                <li>
+                    <h3>Kaffenjutare</h3>
+                    <span class="bar">
+                        <span class="kaffenjutare">
+                            <span class="percent">100%</span>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="allaProjekt">
+        <ul id="projektJSON"></ul>
+        <div class="knappar">
+            <button id="sorteraLangd">Sortera längd stigande</button>
+            <button id="sorteraDatum"> Sortera datum stigande</button>
+        </div>
+    </div>
+
+    <h1 class="slideshow-h1">BILDSPEL</h1>
+    <div class="slideshow-adam">
+
+        <div class="adamBilder">
+            <div class="slideshowNummer">1 / 4</div>
+            <img src="bilder/beanlab.png" alt="beanlab">
+        </div>
+
+        <div class="adamBilder">
+            <div class="slideshowNummer">2 / 4</div>
+            <img src="bilder/kaffekvarn.jpg" alt="kvarb">
+        </div>
+
+        <div class="adamBilder">
+            <div class="slideshowNummer">3 / 4</div>
+            <img src="bilder/coffeeplant.jpg" alt="coffeeplant">
+        </div>
+
+        <div class="adamBilder">
+            <div class="slideshowNummer">4 / 4</div>
+            <img src="bilder/coffeeanalytics.jpg" alt="analytics">
+        </div>
+        <a class="bak" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="fram" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</body>
+
+</html>

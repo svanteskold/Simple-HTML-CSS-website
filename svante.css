@@ -1,0 +1,430 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(85, 38, 0);
+}
+
+p {
+  color: rgb(54, 28, 11);
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #a5815fe5;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;    
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  min-height: 70px;
+}
+
+.logo-link {
+ position: absolute;
+  left: 1rem;               
+  top: 50%;
+  transform: translateY(-50%); 
+  text-decoration: none; 
+  transition: transform 0.3s ease;
+
+}
+
+.logo-link:hover {
+  transform: translateY(-50%) scale(1.25);
+
+}
+
+.loggaliten {
+  height: 50px;
+  width: auto;
+}
+
+.topbar-title {
+  margin: 0;
+  color: rgb(54, 28, 11);
+  font-size: 1.3rem;
+  text-align: center;
+  max-width: 70%;
+}
+
+
+.topbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.infotext {
+    color: rgb(85, 38, 0);
+    width: 30%;
+}
+
+.ommig {
+    display: flex;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.ommig img {
+    width: auto;
+    max-width: 100%;   /* så bilden inte växer för mycket */
+    height: auto;
+}
+
+
+.bildspelRubrik {
+
+  text-align: center;
+}
+
+.slideshow-bilder {
+ position: relative;
+  margin: auto;
+  max-width: 1000px;
+  height: 80vh;
+  overflow: hidden; 
+  background-color: #f6f1ea;
+}
+
+.bildspelBilder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bildspelBilder {
+ display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bak,
+.fram {
+cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: brown;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.fram {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.bak:hover,
+.fram:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.slideshowText {
+ color: #f2f2f2;
+  font-size: 1rem;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.slideshowNummer {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+@keyframes fade {
+  from {
+    opacity: 0.85
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.projektRubrik{
+
+  text-align: center;
+}
+
+#projekt-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+}
+
+.projekt-kort {
+  background-color: #5C4033;
+  border: 2px solid #C4A484;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  flex: 1 1 250px;
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.projekt-kort:hover {
+  transform: scale(1.05);
+}
+
+.projekt-kort h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #fffdf9;
+}
+
+.projekt-kort h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #f9e7d3;
+}
+
+.projekt-kort p {
+  font-size: 0.95rem;
+  color: #f5ede5;
+  margin-bottom: 10px;
+}
+
+.projekt-kort small {
+  font-size: 0.85rem;
+  color: #e5d5c2;
+}
+
+.kompetensRubrik{
+
+  text-align: center;
+}
+
+.kompetens-proc[data-proc="94%"] {
+    max-width: 94%;
+}
+.kompetens-proc[data-proc="89%"] {
+    max-width: 89%;
+}
+.kompetens-proc[data-proc="100%"] {
+    max-width: 100%;
+}
+.kompetens-proc[data-proc="99%"] {
+    max-width: 99%;
+}
+
+
+.kompetenser{
+
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;        
+  padding: 20px; 
+}
+
+.kompetens {
+
+  margin: 30px 0;
+}
+
+.kompetens-namn{
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #5C4033;
+  margin: 0 20px;
+}
+
+.kompetens-bar{
+
+  height: 14px;
+  background: white;
+  border-radius: 4px;
+}
+
+.kompetens-proc{
+
+  height: 14px;
+  background: #5C4033;
+  border-radius: 4px;
+  position: relative;
+  animation: fillBars 4s 1;
+}
+
+.kompetens-proc::before{
+
+content: attr(data-proc);
+position: absolute;
+padding: 4px 6px;
+background-color: #5C4033;
+color: #fff;
+border-radius: 4px;
+font-size: 12px;
+top: -35px;
+right: 0;
+transform: translateX(50%); 
+}
+
+.kompetens-proc::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #5C4033;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  z-index: -1;
+}
+
+@keyframes fillBars {
+  from{
+
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.kontakt {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #a5815fe5;
+    margin-top: 60px;
+}
+
+.kontakt h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.linkedin-icon {
+     width: 120px;      
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.linkedin-icon:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 1200px) {
+
+   .topbar {
+    position: relative;
+  }
+  
+  .ommig {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ommig img,
+    .infotext {
+        width: 100%; 
+      
+    }
+    
+    .infotext {
+        width: 100%;
+    }
+
+  .slideshow-bilder {
+    height: auto;
+    position: relative;
+  }
+
+  .bildspelBilder {
+    position: relative;
+  }
+
+  .bildspelBilder img {
+  width: 100%;     
+  height: auto;    
+  object-fit: contain; 
+  display: block;
+  }
+
+  .slideshowText {
+    position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px 12px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  }
+
+  .bak, .fram {
+    font-size: 24px;
+    padding: 12px;
+  }
+
+  .slideshowNummer {
+    font-size: 0.8rem;
+  }
+
+  .projektTitel {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(85, 38, 0); 
+  margin-bottom: 30px;  
+}
+
+   #projects-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .project-card {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .project-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+  }
+
+  .project-card p,
+  .project-card small {
+    font-size: 0.9rem;
+  }
+}
+  

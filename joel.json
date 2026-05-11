@@ -1,0 +1,34 @@
+[
+  {
+    "namn": "Superdator",
+    "beskrivning": "Ett projekt om beräkning och AI",
+    "kategori": "Hårdvara",
+    "id":"proj1"
+  },
+  {
+    "namn": "Superbean",
+    "beskrivning": "En app för kaffeälskare",
+    "kategori": "App",
+    "id":"proj2"
+  },
+  {
+    "namn": "Superglasögon",
+    "beskrivning": "Augmented reality-glasögon",
+    "kategori": "Underhållning",
+    "id":"proj3"
+  },
+
+  {
+    "namn": "Superbryggare",
+    "beskrivning": "Den intelligenta kaffemaskinen",
+    "kategori": "Bryggare",
+    "id":"proj4"
+  },
+
+  {
+    "namn": "KaffeKapsel",
+    "beskrivning": "Bäst i test SciFi kapsel",
+    "kategori": "Kaffekaplsar",
+    "id":"proj5"
+  }
+]

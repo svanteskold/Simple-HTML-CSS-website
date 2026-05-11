@@ -1,0 +1,313 @@
+header {
+  background-color: #a5815fe5;
+  max-height: 100px;
+  display: flex; 
+  align-items: center; 
+  padding: 0 20px; 
+}
+
+.logo-link {
+  margin-right: 20px; 
+}
+
+.loggaliten {
+  max-height: 100px;
+}
+
+.topbar-text {
+  text-align: center; 
+  flex-grow: 1; 
+  margin-right: 100px; 
+}
+
+.topbar-titel {
+  margin: 0; 
+  font-size: 1.5rem; 
+}
+
+.topbar-text p {
+  margin: 5px 0 0; 
+  font-size: 1rem; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #8a6b4f, #a5815f, #bf9870);
+  color: white;
+}
+
+
+button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #0a1216;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.h1titel {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+
+.projekt-galleri {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  text-align: center;
+}
+
+.projekt-galleri p {
+  max-width: 500px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.projekt-galleri img {
+  max-height: 900px;
+  transition: transform 0.3s ease;
+  margin-top: 35px;
+}
+
+.projekt-galleri img:hover {
+  transform: scale(1.05);
+}
+
+.presentation {
+  text-align: center;
+}
+
+#joelbild {
+  height: 500px;
+  border-radius: 16px;
+}
+
+.slideshow-bilder {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow-bilder img {
+  height: 500px;
+  border-radius: 16px;
+}
+
+.slideshow-bilder .bak,
+.slideshow-bilder .fram {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: white;
+  background: rgba(0,0,0,0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.slideshow-bilder .bak {
+  left: 35%;  
+}
+
+.slideshow-bilder .fram {
+  right: 35%;
+}
+
+
+.per-80 { max-width: 80%; }
+.per-70 { max-width: 70%; }
+.per-85 { max-width: 85%; }
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.skill-name {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.skill-per {
+  height: 14px;
+  background: rgb(7, 165, 218);
+  border-radius: 4px;
+  position: relative;
+  margin-top: 10px;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-bar {
+  height: 14px;
+  background: #f5f5f5;
+  border-radius: 7px;
+  margin: 10px;
+}
+
+.skill-per::before {
+  content: attr(data-per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: 25px;
+  right: 0;
+  transform: translateX(50%);
+  color: black;
+  z-index: 2;
+}
+
+.skill-per::after {
+  content: '';
+  position: absolute;
+  top: 18.5px;
+  right: 0;
+  transform: translateX(50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #f1f1f1;
+}
+
+#projektLista {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filter button {
+  height: 40px;
+  padding: 0 12px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.filter input {
+  height: 18px;
+  padding: 0 12px;
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 15px;
+}
+
+#filterInput {
+  margin-top: 0;
+  padding: 0.5rem;
+}
+
+.flash-animation {
+    animation: flashEffect 0.8s ease-in-out;
+}
+
+@keyframes flashEffect {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-bar {
+    width: 200px;
+    margin: 10px auto;
+  }
+
+  .skill-name {
+    text-align: center;
+  }
+
+  .skill {
+  margin-bottom: 20px;
+}
+
+  .projekt-galleri img {
+    height: 600px;
+  }
+
+  .projekt-galleri p {
+    margin: 15px 15px;
+  }
+
+  .filter {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .filter button {
+    width: 210px;
+  }
+
+  #projektLista {
+    margin-top: 20px;
+  }
+
+.slideshow-bilder .bak,
+  .slideshow-bilder .fram {
+    font-size: 2rem; 
+    padding: 0.3rem 0.6rem; 
+  }
+  
+  .slideshow-bilder .bak {
+    left: 5%;   
+  }
+
+  .slideshow-bilder .fram {
+    right: 5%;  
+  }
+}

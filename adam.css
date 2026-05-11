@@ -1,0 +1,385 @@
+header {
+    background-color: rgb(204, 122, 0);
+    position: relative;
+    padding: 10px;
+}
+
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(54, 28, 11);
+}
+
+p {
+    color: rgb(54, 28, 11);
+}
+
+li {
+    list-style-type: none;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    width: 60px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.title img:hover {
+    transform: scale(1.2);
+}
+
+.titlename {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.titlename h1,
+.titlename h3 {
+    margin: 0;
+}
+
+.about {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.info img {
+    border-radius: 50px;
+}
+
+.agecity h3 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(204, 122, 0);
+    border-radius: 8px;
+}
+
+.aboutText {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutText h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.aboutText p {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/*Skillbars*/
+.skills {
+    list-style: none;
+    padding: 0;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.skills h3 {
+    text-align: left;
+}
+
+.skills li {
+    margin: 30px 0;
+}
+
+.bar {
+    background-color: rgb(53, 30, 0);
+    display: block;
+    height: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    position: relative;
+    background-color: rgb(204, 122, 0);
+    border-radius: 20px;
+}
+
+.bar span .percent {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    background-color: rgb(204, 122, 0);
+    color: rgb(53, 30, 0);
+    padding: 4px 6px;
+    border-radius: 20px;
+
+    font-size: 15px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+
+.analysis {
+    width: 0%;
+    animation: analysis 4s forwards;
+}
+
+.inkop {
+    width: 0%;
+    animation: inkop 4s forwards;
+}
+
+.labberf {
+    width: 0%;
+    animation: labberf 4s forwards;
+}
+
+.kaffenjutare {
+    width: 0%;
+    animation: kaffenjutare 4s forwards;
+}
+
+@keyframes analysis {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes inkop {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes labberf {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes kaffenjutare {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.allaProjekt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projektJSON {
+    text-align: left;
+    background-color: rgb(204, 122, 0);
+    border-radius: 30px;
+    width: 1000px;
+}
+
+#projektJSON h1 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.knappar {
+    display: flex;
+    justify-content: center;
+}
+
+.knappar button {
+    margin: 5px 17px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    font-weight: bold;
+    color: rgb(53, 30, 0);
+}
+
+.slideshow-h1 {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.slideshow-adam {
+    position: relative;
+    margin: 1rem auto;
+    display: inline-block;
+}
+
+.slideshow-adam img {
+    max-width: 100%;
+    max-height: 1000px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.bak,
+.fram {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.bak {
+    left: 4%;
+}
+
+.fram {
+    right: 4%;
+}
+
+.bak:hover,
+.fram:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.slideshowNummer {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.adamBilder {
+    display: none;
+    position: relative;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    margin: 1rem;
+}
+
+.adamBilder img {
+    transition: transform 2s ease;
+}
+
+.adamBilder img.synligBild {
+    transform: scale(1.2);
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.85
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width: 1200px) {
+    .title {
+        flex-direction: column;
+    }
+
+    .title img {
+        width: 50px;
+    }
+
+    .titlename {
+        position: static;
+        transform: none;
+    }
+
+    .info {
+        width: 90%;
+        align-items: center;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about img {
+        width: 60%;
+    }
+
+    .aboutText {
+        width: 90%;
+    }
+
+    .skills {
+        width: 90%;
+        padding: 0;
+    }
+
+    .allaProjekt {
+        width: auto;
+        margin: 1rem;
+    }
+
+    #projektJSON {
+        padding: 2rem;
+        width: auto;
+    }
+
+    #projektJSON h1 {
+        padding: 0rem;
+    }
+
+    .knappar button {
+        align-items: center;
+    }
+
+    .slideshow-adam {
+        margin: 1rem;
+    }
+
+    .bak {
+        left: 7%;
+    }
+
+    .fram {
+        right: 7%;
+    }
+
+    .slideshow-h1 {
+    margin-bottom: 3rem;
+}
+
+}

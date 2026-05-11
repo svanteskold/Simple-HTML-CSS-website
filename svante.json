@@ -1,0 +1,32 @@
+[
+  {
+    "titel": "KraftFullt Kaffe - Webbutveckling",
+    "kund": "Kaffekraft AB",
+    "beskrivning": "Ny webbplats med e-handel för kaffeprodukter",
+    "mer_info": "Responsiv design, betalningslösning, CMS-integration"
+  },
+  {
+    "titel": "KaffeApp - Mobilapplikation",
+    "kund": "Kaffekraft Mobile",
+    "beskrivning": "Mobilapp för kaffebeställning och bryggguide",
+    "mer_info": "React Native, push-notiser, kaffekalkylator"
+  },
+  {
+    "titel": "KraftMätaren - IoT-lösning",
+    "kund": "Kaffekraft Industry",
+    "beskrivning": "Smart mätare för kaffebönors kvalitet",
+    "mer_info": "Sensorer, molnlagring, realtidsdata"
+  },
+  {
+    "titel": "BryggKraft - Utbildningsplattform",
+    "kund": "Kaffekraft Academy",
+    "beskrivning": "Onlinekurser i kaffebryggning",
+    "mer_info": "Videoinnehåll, quiz, certifiering"
+  },
+  {
+    "titel": "KraftKontoret - Bokföringssystem",
+    "kund": "Kaffekraft Finance",
+    "beskrivning": "Anpassat system för kaffeföretag",
+    "mer_info": "Fakturering, lagerhantering, rapporter"
+  }
+]

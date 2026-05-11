@@ -1,0 +1,32 @@
+[
+    {
+        "Projekt": "Fältbesök: Kaffeproduktion i Brasilien",
+        "Beskrivning": "Vistelse och undersökning av verksamhet",
+        "Datum": "2026-01-07",
+        "Längd": "5"
+    },
+    {
+        "Projekt": "Sensorisk analys: Kaffeprovning i Colombia",
+        "Beskrivning": "Analys av olika bönsorter och smakprofiler",
+        "Datum": "2025-07-05",
+        "Längd": "2"
+    },
+    {
+        "Projekt": "Fältstudie: Klimatpåverkan på kaffeodling i Frankrike",
+        "Beskrivning": "Insamling av data om odlingsmetoder och klimatpåverkan",
+        "Datum": "2025-04-14",
+        "Längd": "9"
+    },
+    {
+        "Projekt": "Workshop: Hållbar kaffeodling i Guatemala",
+        "Beskrivning": "Träning i hållbar odling och skördetekniker",
+        "Datum": "2025-07-12",
+        "Längd": "4"
+    },
+    {
+        "Projekt": "Konferens: Forskningspresentation i Italien",
+        "Beskrivning": "Presentation av forskningsresultat och nätverkande",
+        "Datum": "2025-02-09",
+        "Längd": "3"
+    }
+]

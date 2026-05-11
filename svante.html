@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svante</title>
+    <link rel="stylesheet" href="svante.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="svante.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="topbar">
+        <a href="index.html" class="logo-link">
+            <img src="bilder/loggaliten.png" alt="Kaffekrafts logotyp" class="loggaliten">
+        </a>
+        <h1 class="topbar-title">
+            Möt Svante Sköld
+        </h1>
+    </header>
+
+
+    <div class="ommig">
+        <img src="bilder/krobbe2.png" alt="krobbe2">
+        <div class="infotext">
+            <h1>Bakom kulisserna</h1>
+            <p> På Kaffekraft är vår största tillgång våra människor. Och bland dem står Svante Sköld fram som en unik
+                bjälte. Han är mer än en kollega; han är bolagets minne, vår kompass i en föränderlig bransch och en
+                inspiratör för en ny generation kaffepassionerar. Här är hans resa.</p>
+            <h3>Från Bönor till Bolag: En Resa Genom Kaffets Värld</h3>
+            <p>Svantes kärlek till kaffe väcktes inte på ett kontor, utan ute i fält. Hans resa började för över tre
+                decennier sedan med de första mötena med odlare och uppköpare. Han har rest till odlingsområden över
+                hela världen, från Etiopiens högländer till Brasiliens fazendor, och byggt upp en oöverträffad
+                förståelse för kaffets hela kedja – från jord till kopp. Denna unika bakgrund, där praktisk erfarenhet
+                mötte affärsutmaningar, la grunden för hans exceptionella expertis. Innan han kom till Kaffekraft hade
+                Svante redan byggt ett rykte som en branschledare med både vision och förmåga att exekvera. När vi fick
+                möjligheten att välkomna honom ombord insåg vi genast värdet av att inte bara anställa en expert, utan
+                att investera i ett levande arv av kunskap.</p>
+            <h3>Hans Roll: Senior Advisor of Expert Strategic Guidance and Mentorship</h3>
+            <p>Svantes titel, Senior Advisor of Expert Strategic Guidance and Mentorship, är noggrant vald för att
+                spegla hans verkliga bidrag.
+                Strategisk Vägledning: Svante fungerar som en betrodd strategisk rådgivare för vår ledning. Han utmanar
+                våra antaganden, hjälper oss att se över horisonten och säkerställer att våra långsiktiga planer är
+                rotade i branschens verklighet. Hans insikter är avgörande när vi tar beslut om inköp, produktutveckling
+                och marknadspositionering.
+                Mentorskapsansvar: Kanske är hans viktigaste roll den som mentor. Svante ägnar en avsevärd del av sin
+                tid åt att coacha och utveckla våra talanger. Oavsett om det gäller unga kaffeprofessioner, nya
+                roastmasters eller chefer, delar Svante generöst med sig av sina kunskaper och erfarenheter. Han är den
+                personen man söker upp för att få ett klokt råd, en annan vinkel eller en uppmuntrande peptalk.</p>
+            <h4>"Att arbeta med kaffe handlar inte bara om att sälja en produkt. Det handlar om att förstå en kultur,
+                ett hantverk och de människor som ägnar sina liv åt det. Min passion är att se till att den kunskapen
+                och respekten lever vidare i allt vi gör på Kaffekraft." – Svante Sköld</h4>
+        </div>
+    </div>
+
+
+    <div class="bildspelRubrik">
+        <h1>Om Svante</h1>
+    </div>
+
+    <div class="slideshow-bilder">
+
+        <div class="bildspelBilder fade">
+            <div class="slideshowNummer">1 / 5</div>
+            <img src="bilder/Chatbild1.png" alt="bild1">
+            <div class="slideshowText">Morgonrutinen med en kopp java</div>
+        </div>
+
+        <div class="bildspelBilder fade">
+            <div class="slideshowNummer">2 / 5</div>
+            <img src="bilder/Chatbild2.png" alt="bild2">
+            <div class="slideshowText">Antecknar nya ideér till Kaffekraft</div>
+        </div>
+
+        <div class="bildspelBilder fade">
+            <div class="slideshowNummer">3 / 5</div>
+            <img src="bilder/Chatbild3.png" alt="bild3">
+            <div class="slideshowText">På affärsresa i Miami för att knyta nya kontakter</div>
+        </div>
+
+        <div class="bildspelBilder fade">
+            <div class="slideshowNummer">4 / 5</div>
+            <img src="bilder/Chatbild4.png" alt="bild4">
+            <div class="slideshowText">Testar nya kaffesorter i labbet</div>
+        </div>
+
+        <div class="bildspelBilder fade">
+            <div class="slideshowNummer">5 / 5</div>
+            <img src="bilder/Chatbild5.png" alt="bild5">
+            <div class="slideshowText">På affärsresa igen för att få det hemliga kaffereceptet</div>
+        </div>
+
+        <a class="bak" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="fram" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div class="projektRubrik">
+        <h1>Svantes projekt</h1>
+    </div>
+    <div id="projekt-container"></div>
+
+    <div class="kompetensRubrik">
+        <h1>Svantes kompetenser</h1>
+    </div>
+
+    <div class="kompetenser">
+        <div class="kompetens">
+            <div class="kompetens-namn">LinkedIn</div>
+            <div class="kompetens-bar">
+                <div class="kompetens-proc" data-proc="100%"></div>
+            </div>
+        </div>
+        <div class="kompetens">
+            <div class="kompetens-namn">Dricka islatte på playan</div>
+            <div class="kompetens-bar">
+                <div class="kompetens-proc" data-proc="94%"></div>
+            </div>
+        </div>
+        <div class="kompetens">
+            <div class="kompetens-namn">Åka på affärsresor</div>
+            <div class="kompetens-bar">
+                <div class="kompetens-proc" data-proc="89%"></div>
+            </div>
+        </div>
+        <div class="kompetens">
+            <div class="kompetens-namn">Köpa roliga prylar momsfritt via företaget</div>
+            <div class="kompetens-bar">
+                <div class="kompetens-proc" data-proc="99%"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="kontakt">
+        <h2>Håll kontakten med Svante!</h2>
+        <a href="https://www.linkedin.com/in/svante-sk%C3%B6ld-b79273288/" target="_blank">
+            <img src="bilder/LinkedIn_2021.svg.webp" alt="LinkedInKrobbe" class="linkedin-icon">
+        </a>
+    </footer>
+</body>
+
+</html>

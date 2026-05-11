@@ -1,0 +1,301 @@
+h1, h2 {
+  color: rgb(85, 38, 0);
+}
+
+p {
+  color: rgb(54, 28, 11);
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.topbar {
+  position: sticky;
+  background-color: #a5815fe5;
+  font-weight: bold;
+}
+
+.topbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.topbar ul {
+  position: absolute;
+  transform: translateX(-50%);
+  display: flex;
+  top: 14px;
+  left: 50%;
+  margin: 0;
+  gap: 6rem;
+  list-style: none;
+}
+
+.mobilmeny {
+  display: none;
+
+}
+
+.mobilmeny a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.loggaliten {
+  height: 50px;
+  width: auto;
+}
+
+.framgang,
+.kaffebona {
+  display: flex;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.framgang img,
+.kaffebona img {
+  width: 30%;
+  max-width: 100%;
+  height: auto;
+}
+
+.infotext,
+.böntext {
+  width: 70%;
+}
+
+.maskinRubrik {
+  text-align: center;
+}
+
+.slideshow-maskiner {
+  position: relative;
+  margin: auto;
+  max-width: 1500px;
+}
+
+.slideshow-maskiner img {
+  width: 100%;
+}
+
+.maskinBilder {
+  display: none;
+}
+
+.bak,
+.fram {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.fram {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.bak:hover,
+.fram:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.slideshowText {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.slideshowNummer {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.85
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.personalSektion {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.personalInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.personalInfo img {
+  width: 65%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+  cursor:pointer;
+}
+
+.personalInfo img:hover {
+
+  transform: scale(1.08);
+}
+
+.personalInfo h2 {
+
+  font-size: 2rem;
+  margin: 10px 0 6px;
+}
+
+.personalInfo p {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+}
+
+.dropdown {
+  display: none;
+}
+
+.personalInfo h1 {
+  text-align: center;
+}
+
+.h1omoss {
+  text-align: center;
+}
+
+.Kontaktsida {
+  text-align: center;
+
+}
+
+#kontaktFormular{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#kontaktinfo{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 35%;
+}
+
+#meddelande {
+  height: 120px;
+  width: 35%;
+  resize: none;
+}
+
+input.error {
+  border: 2px solid red;
+}
+
+textarea.error {
+  border: 2px solid red;
+}
+
+@media (max-width: 1200px) {
+
+  .topbar ul {
+    display: none;
+  }
+
+  .framgang,
+  .kaffebona {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .framgang img,
+  .kaffebona img,
+  .infotext,
+  .böntext {
+    width: 100%;
+  }
+
+  .personalSektion {
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+
+  .mobilmeny {
+    display: none;
+  }
+
+  .mobilmeny.visa {
+    display: block;
+  }
+
+  .mobilmeny ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0.5em;
+    background-color: #a5815fe5;
+    margin: 0;
+    font-weight: bold;
+    color: #2c2117e5;
+  }
+
+  .topbar {
+    position: relative;
+  }
+
+  .dropdown {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  #kontaktinfo{
+    width: 80%;
+  }
+
+  #meddelande {
+    width: 80%;
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hampus Davén</title>
+  <link rel="stylesheet" href="hampus.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="hampus.js" defer></script>
+
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img src="bilder/loggaliten.png" alt="Kaffekraft logga" class="loggaliten">
+    </a>
+  </header>
+
+  <section class="titel">
+    <h1>Möt vår System- och Product Engineer</h1>
+  </section>
+
+  <div class="projektshow">
+
+    <section class="maskinshow">
+        <h2 id="minaprojekt">Mina Projekt</h2>
+      <div class="viewport">
+        <figure class="projektBilder active">
+          <span class="counter">1 / 2</span>
+          <img src="bilder/hampusinsteg.png" alt="Designen av instegsmaskinen">
+          <figcaption class="bildtext">Designen av instegsmaskinen</figcaption>
+        </figure>
+
+        <figure class="projektBilder">
+          <span class="counter">2 / 2</span>
+          <img src="bilder/alienbild.png" alt="Design tillsammans med en alien på rymdskepp">
+          <figcaption class="bildtext">Design tillsammans med en alien</figcaption>
+        </figure>
+      </div>
+      <button class="nav prev">‹</button>
+      <button class="nav next">›</button>
+    </section>
+
+  
+
+    <main class="personalsida">
+      <div class="profilbild">
+        <img src="bilder/HampusBild.jpg" alt="Hampus Davén" class="bildhampus">
+      </div>
+      <h2 id="namn">Hampus Davén</h2>
+      <p class="position">System- och Product Engineer</p>
+
+      <div class="info"><span>Ålder</span><strong>23</strong></div>
+      <div class="info"><span>Stad</span><strong>Örebro</strong></div>
+    </main>
+
+    <aside class="kompetenser">
+      <h2 id="minakompetenser">Kompetenser</h2>
+      <ul class="kompetenser1">
+        <li>
+          <h3>Problemlösning</h3>
+          <span class="bar">
+            <span class="fill problemlosning" style="--level: 80%">
+              <span class="percent">80%</span>
+            </span>
+          </span>
+        </li>
+
+        <li>
+          <h3>Design</h3>
+          <span class="bar">
+            <span class="fill design" style="--level: 70%">
+              <span class="percent">70%</span>
+            </span>
+          </span>
+        </li>
+
+        <li>
+          <h3>Produktutveckling</h3>
+          <span class="bar">
+            <span class="fill utveckling" style="--level: 85%">
+              <span class="percent">85%</span>
+            </span>
+          </span>
+        </li>
+
+        <li>
+          <h3>Kommunikation</h3>
+          <span class="bar">
+            <span class="fill kommunikation" style="--level: 83%">
+              <span class="percent">83%</span>
+            </span>
+          </span>
+        </li>
+      </ul>
+
+    </aside>
+  </div>
+  <section class="projektinfo">
+      <h2 class="projektlista">Projekt Lista</h2>
+      <div id="projektruta" role="list"></div>
+    </section>
+</body>
+</html>

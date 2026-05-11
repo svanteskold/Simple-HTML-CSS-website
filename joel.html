@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Joels projekt</title>
+  <link rel="stylesheet" href="joel.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="joel.js" defer></script>
+</head>
+
+<body>
+   <header class="topbarmeny">
+    <a href="index.html" class="logo-link">
+      <img src="bilder/loggaliten.png" alt="logga" class="loggaliten">
+    </a>
+    <div class="topbar-text">
+      <h1 class="topbar-titel">Joel Öman</h1>
+      <p>Intergalactic Coffee Bean Analyst</p>
+    </div>
+  </header>
+             
+
+  <div class="slideshow-bilder">
+
+        <div class="bildSpel">
+            <div class="slideshowNummer">1 / 3</div>
+            <img src="bilder/joelbild.png" alt="joel1">
+        </div>
+
+        <div class="bildSpel">
+            <div class="slideshowNummer">2 / 3</div>
+            <img src="bilder/joelbild2.jpg" alt="joel2">
+        </div>
+
+        <div class="bildSpel">
+            <div class="slideshowNummer">3 / 3</div>
+            <img src="bilder/joelbild3.jpg" alt="joel3">
+        </div>
+
+        <a class="bak" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="fram" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+  <div class="skills">
+    <div class="skill">
+      <div class="skill-name">Ledarskap</div>
+      <div class="skill-bar">
+        <div class="skill-per per-80" data-per="80%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Kreativitet</div>
+      <div class="skill-bar">
+        <div class="skill-per per-70" data-per="70%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Kommunikation</div>
+      <div class="skill-bar">
+        <div class="skill-per per-85" data-per="85%"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="h1titel">
+    <h1>Mina Projekt</h1>
+  </div>
+
+  <div class="filter">
+    <input type="text" id="filterInput" placeholder="Filtrera på namn...">
+    <button id="sortAZ">Sortera A–Ö</button>
+    <button id="sortZA">Sortera Ö–A</button>
+  </div>
+  <ul id="projektLista"></ul>
+
+
+  <section class="projekt-galleri">
+    <div class="projekt" id="proj1">
+      <img src="bilder/superdator.png" alt="Projekt 1">
+      <h2>Superdator – Ett projekt om beräkning och AI</h2>
+      <p>I en framtid där varje sekund räknas som en droppe av det finaste kaffet, introducerar Superdatorn en
+        revolutionerande kraft i beräkning och AI.
+        Denna supermaskin, driven av kvantliknande algoritmer, optimerar inte bara komplexa simuleringar utan kan också
+        förutsäga din perfekta kaffeblandning baserat på dina dagliga vanor.
+        Tänk dig att vakna upp till en AI som brygger din morgonkaffe innan du ens tänkt tanken!
+        Med Superdatorn blir världen en plats där intelligens flödar lika smidigt som espresso från en futuristisk
+        bryggare, och varje beräkning känns som en adrenalinkick av koffein.</p>
+    </div>
+
+    <div class="projekt" id="proj2">
+      <img src="bilder/superböna.png" alt="Projekt 2">
+      <h2>Superböna – En app för kaffeälskare</h2>
+      <p>Välkommen till morgondagens kaffeparadis med Superböna, appen som förvandlar din smartphone till en portal av
+        oändliga kaffeupplevelser!
+        I en värld där kaffet inte bara är en dryck utan en livsstil, låter Superböna dig utforska virtuella
+        kaffeplantager, rekommendera personliga recept med AI-precision och till och med simulera doften av nyrostade
+        bönor genom augmented aromateknik.
+        Tänk dig att swipa fram din drömkaffe medan appen förutspår globala kaffetrender – det är som att ha en barista
+        i fickan som aldrig tar paus, och varje uppdatering känns som en ny våg av caffeinberikad innovation!</p>
+    </div>
+
+    <div class="projekt" id="proj3">
+      <img src="bilder/superglasögon.png" alt="Projekt 3">
+      <h2>Superglasögon – Augmented reality-glasögon</h2>
+      <p>Steg in i en epok där verkligheten blandas med det fantastiska genom Superglasögon, de ultimata augmented
+        reality-glasögonen som förhöjer varje stund!
+        I denna futuristiska vision projicerar glasögonen inte bara digitala lager över världen, utan integrerar även
+        kaffekunskap i realtid.
+        Se en kaffekopp och få omedelbara recept, bryggtips eller till och med virtuella smakprov som dansar framför
+        dina ögon som holografiska bönor.
+        Med Superglasögon blir vardagen en sci-fi-saga där du navigerar genom städer med overlayade kaffeguider, och
+        varje blick känns som en klyschig superhjälteupplevelse, boostad av oändlig koffeinenergi!</p>
+    </div>
+
+    <div class="projekt" id="proj4">
+    <img src="bilder/Superbryggare.jpg" alt="Projekt 4">
+    <h2>Superbryggaren - Den intelligenta kaffemaskinen</h2>
+    <p>I en värld där tid är lika dyrbar som den sista droppen av en perfekt bryggd espresso, presenterar Superbryggaren framtidens kafferevolution!
+       Denna hyperintelligenta kaffemaskin, utrustad med neurala nätverk och molekylär smakanalys, skräddarsyr varje kopp efter din sinnesstämning och biometriska data – allt medan den projicerar holografiska kaffevisualiseringar över din köksbänk. 
+       Tänk dig en maskin som inte bara brygger kaffe utan också komponerar en symfoni av smaker, som om varje kopp vore en resa till kaffegalaxens hjärta. 
+       Superbryggaren gör varje morgon till en episk uppvaknandestund, med en koffeinkick som känns som att surfa på en digital våg!</p>
+       </div>
+
+    <div class="projekt" id="proj5">
+    <img src="bilder/KaffeKapsel.jpg" alt="Projekt 5">
+    <h2>KaffeKapsel – Bäst i test SciFi kapsel</h2>
+    <p>Välkommen till framtiden med KaffeKapsel, den revolutionerande kaffekapseln som förvandlar varje kopp till en smakexplosion! 
+      Denna kompakta, futuristiska kapsel, designad för din kaffemaskin, är fylld med exklusiva kaffebönor som bryggs till perfektion – från etiopisk single-origin till en kaffe med en twist av rymdäventyr som månstoftlatte. 
+      Med avancerad teknologi låser kapseln upp en ny nivå av aromer och smaker, som om varje bryggning vore en resa genom en kaffedröm. 
+      KaffeKapsel gör varje morgon till en klyschig sci-fi-upplevelse, där du vaknar till en doft som bär dig in i en ny era av koffeinbaserad lyx!</p>
+    </div>
+  </section>
+
+</body>
+
+</html>

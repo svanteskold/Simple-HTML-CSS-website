@@ -1,0 +1,26 @@
+[
+  { "Projekt": "Vår första maskin: MaxKraft",
+    "Beskriving": "Vårt första projekt, projektet som ändrade kaffevärlden", 
+    "År": 2022 
+  },
+
+
+  { "Projekt": "Design av premiummaskin: MaxKraft PLUS", 
+  "Beskriving": "Från ide till en färdig lyxmaskin", 
+  "År": 2022 },
+
+
+  { "Projekt": "Projekt Rymd: MaxKraft Nuclear",      
+  "Beskrivning": "Åkte till rymden för att få fram en ny och framtidsvänlig design", 
+  "År": 2024 },
+
+
+  { "Projekt": "Lyxmaskin: BrutalKraft",              
+  "Beskrivning": "Designandet av vår lyxmaskin för proffsigt bruk", 
+  "År": 2023 },
+
+
+  { "Projekt": "Eco-projekt: Renkraft",               
+  "Beskrivning": "Senaste projektet om en miljövänlig kaffemaskin", 
+  "År": 2025 }
+]
